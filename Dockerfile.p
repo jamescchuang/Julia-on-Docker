@@ -14,10 +14,6 @@ WORKDIR /julia-1.6.3/bin
 RUN ./julia -e 'import Pkg; Pkg.update()' && \
     ./julia -e 'import Pkg; Pkg.add("IJulia");'
 
-# Set up Jupyter    
-# RUN apt install -y build-essential python3.8 python3-pip python3-dev
-# RUN pip3 -q install pip --upgrade
-
 RUN pip3 install jupyter jupyterlab
 
 WORKDIR /data
