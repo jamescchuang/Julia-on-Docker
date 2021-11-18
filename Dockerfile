@@ -4,7 +4,7 @@ EXPOSE 8888
 
 RUN apt update && apt upgrade -y
 
-# Install Python 3.10
+# Install Python 3.9.8
 RUN apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 
 RUN wget https://www.python.org/ftp/python/3.9.8/Python-3.9.8.tgz
